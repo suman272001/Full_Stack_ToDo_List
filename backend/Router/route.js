@@ -4,9 +4,9 @@ const router=express.Router();
 router.get("/",(req,res)=>{
     res.send("abcdefghijklmnopqrstuvwxyz")
 })
-// router.get("/login",(req,res)=>{
-//     res.send("abcdefghijklmnopqrstuvwxyz")
-// })
+ router.get("/login",(req,res)=>{
+     res.send("abcdefghijklmnopqrstuvwxyz")
+})
 
 router.post("/register",r1.registerform)
 router.post("/login",r1.loginform)
